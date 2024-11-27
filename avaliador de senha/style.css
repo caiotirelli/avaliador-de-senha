@@ -1,0 +1,40 @@
+body {
+    background-color:  #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.result {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.muito-fraca {
+    background-color: #dc3545;
+    color: white;
+}
+
+.fraca {
+    background-color: #ffc107;
+    color: black;
+}
+
+.boa {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.forte {
+    background-color: #007bff;
+    color: white;
+}
+
+.muito-forte {
+    background-color: #28a745;
+    color: white;
+}
