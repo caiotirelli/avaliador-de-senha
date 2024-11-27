@@ -1,0 +1,39 @@
+body {
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.result {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.progress-bar {
+    transition: width 0.3s ease;
+}
+
+.progress-bar.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+.progress-bar.bg-warning {
+    background-color: #ffc107 !important;
+}
+
+.progress-bar.bg-info {
+    background-color: #17a2b8 !important;
+}
+
+.progress-bar.bg-primary {
+    background-color: #007bff !important;
+}
+
+.progress-bar.bg-success {
+    background-color: #28a745 !important;
+}

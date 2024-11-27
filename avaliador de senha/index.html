@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Senha</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h1 class="text-center mb-4">Validador de Senha</h1>
+                <div class="mb-3 position-relative">
+                    <input type="password" id="senha" class="form-control" placeholder="Digite sua senha">
+                    <button id="toggleSenha" class="btn btn-outline-secondary btn-sm position-absolute top-50 end-0 translate-middle-y me-2">
+                        Mostrar
+                    </button>
+                </div>
+                <div class="progress mb-3">
+                    <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <ul id="regras" class="list-group mb-3">
+                    <li class="list-group-item">Mínimo de 8 caracteres</li>
+                    <li class="list-group-item">Pelo menos uma letra maiúscula</li>
+                    <li class="list-group-item">Pelo menos uma letra minúscula</li>
+                    <li class="list-group-item">Pelo menos um número</li>
+                    <li class="list-group-item">Pelo menos um símbolo (!, @, #, etc.)</li>
+                </ul>
+                <div id="pontos" class="text-center mb-3">Pontuação: 0</div>
+                <button id="avaliarBtn" class="btn btn-success w-100">Validar Senha</button>
+                <div id="resultado" class="result mt-4 text-center"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
